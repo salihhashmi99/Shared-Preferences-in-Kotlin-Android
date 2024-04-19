@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/colorlinertopgrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/round"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/colorlinertopgrid">
+
+        <TextView
+            android:id="@+id/topicname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Shared Preferences"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your name"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="15dp"/>
+
+        <EditText
+            android:id="@+id/notesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:ems="10"
+            android:layout_marginEnd="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/textboxes"
+            android:text=""
+            android:textColorHint="@color/black"
+            android:textColor="#000000"
+            android:hint="Full Name"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/txtage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your age"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="15dp"/>
+
+        <EditText
+            android:id="@+id/notes2EditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginEnd="10dp"
+            android:paddingLeft="10dp"
+            android:ems="10"
+            android:background="@drawable/textboxes"
+            android:text=""
+            android:textColorHint="@color/black"
+            android:textColor="#000000"
+            android:hint="Age"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/saveNoteButton"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:text="Save Info"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:backgroundTint="#3E4AB7"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
